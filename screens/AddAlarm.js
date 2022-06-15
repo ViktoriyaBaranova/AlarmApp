@@ -25,7 +25,8 @@ export default function AddAlarm() {
     //****************************
     const onChange = (event, selectedDate)=>{
         const currentDate = selectedDate||date;
-        setShow(Platform.OS === 'android');
+        //setShow(Platform.OS === 'android');
+        setShow(false);
         setDate(currentDate);
         //временная дата
         let tempDate = new Date(currentDate);
